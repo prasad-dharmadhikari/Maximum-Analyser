@@ -20,4 +20,14 @@ public class MaximumAnalyser
         else
             return third;
     }
+    //Method for finding maximum from three Strings
+    public String findMaximum(String first, String second, String third)
+    {
+        if (first.compareTo(second) > 0 && first.compareTo(third) > 0)
+            return first;
+        else if (second.compareTo(first) > 0 && second.compareTo(third) > 0)
+            return second;
+        else
+            return third;
+    }
 }
