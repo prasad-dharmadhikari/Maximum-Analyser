@@ -1,13 +1,15 @@
 public class MaximumAnalyser<T extends Comparable<T>>
 {
+    //Fields
     private T first;
     private T second;
     private T third;
-
+    //Default constructor
     public MaximumAnalyser()
     {
 
     }
+    //Parametrized constructor
     public MaximumAnalyser(T first, T second, T third)
     {
         this.first = first;
@@ -24,8 +26,14 @@ public class MaximumAnalyser<T extends Comparable<T>>
         else
             return third;
     }
+    //Internal method to call findMaximum method
     public <T extends Comparable<T>> T findMaximum()
     {
+        printMax(findMaximum(first,second,third));
         return (T) findMaximum(first,second,third);
+    }
+    public void printMax(T maximum)
+    {
+        System.out.println("Maximum is :"+maximum);
     }
 }
