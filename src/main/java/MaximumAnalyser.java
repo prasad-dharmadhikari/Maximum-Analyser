@@ -29,11 +29,11 @@ public class MaximumAnalyser<T extends Comparable<T>>
     //Internal method to call findMaximum method
     public <T extends Comparable<T>> T findMaximum()
     {
-        printMax(findMaximum(first,second,third));
-        return (T) findMaximum(first,second,third);
+        printMax(findMaximum(first, second, third));
+        return (T) findMaximum(first, second, third);
     }
     public void printMax(T maximum)
     {
-        System.out.println("Maximum is :"+maximum);
+        System.out.println("Maximum is :" + maximum);
     }
 }
